@@ -1,11 +1,11 @@
-<img alt="GTTexture-RxExtension" src="https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/resources/logo.png style="max-width: 100%">
 
-<div align="center">
-    [![CI Status](https://img.shields.io/travis/Geektree0101/GTTexture-RxExtension.svg?style=flat)](https://travis-ci.org/Geektree0101/GTTexture-RxExtension)
-    [![Version](https://img.shields.io/cocoapods/v/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
-    [![License](https://img.shields.io/cocoapods/l/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
-    [![Platform](https://img.shields.io/cocoapods/p/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
-</div>
+![alt text](https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/resources/logo.png)
+
+[![CI Status](https://img.shields.io/travis/Geektree0101/GTTexture-RxExtension.svg?style=flat)](https://travis-ci.org/Geektree0101/GTTexture-RxExtension)
+[![Version](https://img.shields.io/cocoapods/v/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
+[![License](https://img.shields.io/cocoapods/l/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
+[![Platform](https://img.shields.io/cocoapods/p/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
+
 
 ## Example
 
@@ -28,4 +28,4 @@ Geektree0101, h2s1880@gmail.com
 
 ## License
 
-GTTexture-RxExtension is available under the MIT license. See the LICENSE file for more info.
+GTTexture-RxExtension is available under the MIT license. See the LICENSE file for more info
