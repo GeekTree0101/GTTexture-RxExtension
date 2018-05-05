@@ -1,6 +1,9 @@
 language: objective-c
 osx_image: xcode9.1
 
+xcode_project: Example/GTTexture-RxExtension.xcworkspace 
+xcode_scheme:  Example/GTTexture-RxExtensionTests
+
 cache: cocoapods
 podfile: Example/Podfile
 
