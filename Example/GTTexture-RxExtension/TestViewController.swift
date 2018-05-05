@@ -23,6 +23,8 @@ class TestViewController: ASViewController<ASDisplayNode> {
         return node
     }()
     
+    
+    
     let disposeBag = DisposeBag()
     
     init() {
@@ -38,8 +40,10 @@ class TestViewController: ASViewController<ASDisplayNode> {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        buttonNode.rx.tap.subscribe().disposed(by: disposeBag)
         
         Observable.just("https://koreaboo-cdn.storage.googleapis.com/2017/08/sana-1-1.jpg")
             .map { URL(string : $0) }

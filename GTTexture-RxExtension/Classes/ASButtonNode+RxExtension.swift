@@ -19,13 +19,6 @@ import PINRemoteImage
  public static var disabled: UIControlState { get }
  
  public static var selected: UIControlState { get } // flag usable by app (see below)
- 
- @available(iOS 9.0, *)
- public static var focused: UIControlState { get } // Applicable only when the screen supports focus
- 
- public static var application: UIControlState { get } // additional flags available for application use
- 
- public static var reserved: UIControlState { get } // flags reserved for internal framework use
  **/
 
 extension Reactive where Base: ASButtonNode {
@@ -233,9 +226,6 @@ extension Reactive where Base: ASButtonNode {
         case highlighted(Any?)
         case disabled(Any?)
         case selected(Any?)
-        case focused(Any?)
-        case application(Any?)
-        case reserved(Any?)
         
         var state: UIControlState {
             switch self {
@@ -247,12 +237,6 @@ extension Reactive where Base: ASButtonNode {
                 return .disabled
             case .selected:
                 return .selected
-            case .focused:
-                return .focused
-            case .application:
-                return .application
-            case .reserved:
-                return .reserved
             }
         }
         
@@ -265,12 +249,6 @@ extension Reactive where Base: ASButtonNode {
             case .disabled(let attr):
                 return attr as? URL
             case .selected(let attr):
-                return attr as? URL
-            case .focused(let attr):
-                return attr as? URL
-            case .application(let attr):
-                return attr as? URL
-            case .reserved(let attr):
                 return attr as? URL
             }
         }
@@ -285,12 +263,6 @@ extension Reactive where Base: ASButtonNode {
                 return attr as? UIImage
             case .selected(let attr):
                 return attr as? UIImage
-            case .focused(let attr):
-                return attr as? UIImage
-            case .application(let attr):
-                return attr as? UIImage
-            case .reserved(let attr):
-                return attr as? UIImage
             }
         }
         
@@ -304,12 +276,6 @@ extension Reactive where Base: ASButtonNode {
                 return attr as? [NSAttributedStringKey: Any]
             case .selected(let attr):
                 return attr as? [NSAttributedStringKey: Any]
-            case .focused(let attr):
-                return attr as? [NSAttributedStringKey: Any]
-            case .application(let attr):
-                return attr as? [NSAttributedStringKey: Any]
-            case .reserved(let attr):
-                return attr as? [NSAttributedStringKey: Any]
             }
         }
     }
@@ -320,9 +286,6 @@ extension Reactive where Base: ASButtonNode {
         node.setAttributedTitle(attrText, for: .selected)
         node.setAttributedTitle(attrText, for: .highlighted)
         node.setAttributedTitle(attrText, for: .disabled)
-        node.setAttributedTitle(attrText, for: .focused)
-        node.setAttributedTitle(attrText, for: .application)
-        node.setAttributedTitle(attrText, for: .reserved)
     }
     
     private func setAllImage(_ node: ASButtonNode, image: UIImage?) {
@@ -330,9 +293,6 @@ extension Reactive where Base: ASButtonNode {
         node.setImage(image, for: .selected)
         node.setImage(image, for: .highlighted)
         node.setImage(image, for: .disabled)
-        node.setImage(image, for: .focused)
-        node.setImage(image, for: .application)
-        node.setImage(image, for: .reserved)
     }
     
     private func setAllBackgroundImage(_ node: ASButtonNode, image: UIImage?) {
@@ -340,8 +300,5 @@ extension Reactive where Base: ASButtonNode {
         node.setBackgroundImage(image, for: .selected)
         node.setBackgroundImage(image, for: .highlighted)
         node.setBackgroundImage(image, for: .disabled)
-        node.setBackgroundImage(image, for: .focused)
-        node.setBackgroundImage(image, for: .application)
-        node.setBackgroundImage(image, for: .reserved)
     }
 }
