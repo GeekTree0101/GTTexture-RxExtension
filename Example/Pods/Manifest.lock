@@ -23,6 +23,8 @@ PODS:
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
+  - RxTest (4.1.2):
+    - RxSwift (~> 4.0)
   - Texture (2.6):
     - Texture/PINRemoteImage (= 2.6)
   - Texture/Core (2.6)
@@ -35,6 +37,7 @@ DEPENDENCIES:
   - GTTexture-RxExtension (from `../`)
   - Nimble (~> 7.0.2)
   - Quick (~> 1.2.0)
+  - RxTest (~> 4.0)
 
 EXTERNAL SOURCES:
   GTTexture-RxExtension:
@@ -49,8 +52,9 @@ SPEC CHECKSUMS:
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
+  RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
   Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
 
-PODFILE CHECKSUM: 4b744cad9cde3d01b7ca2b43cc863ebca509aca2
+PODFILE CHECKSUM: 44b068eee2c6a4f13d221d7c065ec7cb448b279a
 
 COCOAPODS: 1.3.1
