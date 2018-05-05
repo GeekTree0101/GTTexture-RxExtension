@@ -1,6 +1,12 @@
 language: objective-c
 osx_image: xcode9.1
 
-script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+cache: cocoapods
+podfile: Example/Podfile
+
+before_install:
+  - pod install --project-directory=Example
+  
+branches:
+  only:
+    - master
