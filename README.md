@@ -1,6 +1,6 @@
 ![alt text](https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/resources/logo.png)
 
-[![CI Status](https://img.shields.io/travis/Geektree0101/GTTexture-RxExtension.svg?style=flat)](https://travis-ci.org/GeekTree0101/GTTexture-RxExtension)
+[![CI Status](https://api.travis-ci.org/GeekTree0101/GTTexture-RxExtension.svg?branch=master)](https://travis-ci.org/GeekTree0101/GTTexture-RxExtension)
 [![Version](https://img.shields.io/cocoapods/v/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
 [![License](https://img.shields.io/cocoapods/l/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
 [![Platform](https://img.shields.io/cocoapods/p/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)

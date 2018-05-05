@@ -1,15 +1,16 @@
 language: objective-c
 osx_image: xcode9.1
+xcode_project: Example/GTTexture-RxExtension.xcworkspace
+xcode_scheme: GTTexture-RxExtension
+
 
 cache: cocoapods
 podfile: Example/Podfile
 
 before_install:
+  - brew install xctool
   - pod install --repo-update --project-directory=Example
   
 branches:
   only:
     - master
-    
-script:
-    - xcodebuild clean build -sdk iphonesimulator -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension CODE_SIGNING_REQUIRED=NO
