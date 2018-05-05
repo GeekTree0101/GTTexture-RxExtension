@@ -2,7 +2,6 @@
 
 import Quick
 import Nimble
-import GTTexture-RxExtension
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

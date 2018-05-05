@@ -1,0 +1,6 @@
+framework module Pods_GTTexture_RxExtension_Tests {
+  umbrella header "Pods-GTTexture-RxExtension_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

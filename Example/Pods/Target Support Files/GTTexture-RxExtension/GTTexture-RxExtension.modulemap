@@ -1,0 +1,6 @@
+framework module GTTexture_RxExtension {
+  umbrella header "GTTexture-RxExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
