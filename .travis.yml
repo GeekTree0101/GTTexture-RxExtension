@@ -12,4 +12,4 @@ branches:
     - master
     
 script:
-    - xcodebuild clean build -sdk iphonesimulator -workspace Example/GTTexture-RxExtension.xcworkspace -scheme Example/GTTexture-RxExtensionTests CODE_SIGNING_REQUIRED=NO
+    - xcodebuild clean build -sdk iphonesimulator -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension_Tests CODE_SIGNING_REQUIRED=NO
