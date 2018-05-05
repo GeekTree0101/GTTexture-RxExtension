@@ -28,10 +28,4 @@ extension Reactive where Base: ASTextNode {
                                                      attributes: attributes)
         }
     }
-    
-    var maximumNumberOfLines: Binder<UInt> {
-        return Binder(self.base) { node, numberOfLines in
-            node.maximumNumberOfLines = numberOfLines
-        }
-    }
 }

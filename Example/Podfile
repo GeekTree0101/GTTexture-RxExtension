@@ -8,5 +8,6 @@ target 'GTTexture-RxExtension_Example' do
 
     pod 'Quick', '~> 1.2.0'
     pod 'Nimble', '~> 7.0.2'
+    pod 'RxTest', '~> 4.0'
   end
 end
