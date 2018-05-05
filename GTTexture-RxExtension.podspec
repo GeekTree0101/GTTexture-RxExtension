@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GTTexture-RxExtension'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Texture RxSwift Extension'
 
   s.description      = 'Texture RxSwift Extension'
