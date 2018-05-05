@@ -1,9 +1,8 @@
 //
 //  AppDelegate.swift
-//  GTTexture-RxExtension
 //
-//  Created by Geektree0101 on 05/05/2018.
-//  Copyright (c) 2018 Geektree0101. All rights reserved.
+//  Created by Geektree0101.
+//  Copyright(C) 2018 Geektree0101. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds) // create UIwindow
         
-        let root = TestViewController()
+        let root = ViewController()
         if let window = window {
             window.rootViewController = root
             window.makeKeyAndVisible()

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* TestViewController.swift */; };
+		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		95B109AB7AC68C78787AC9D9 /* Pods_GTTexture_RxExtension_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01237F39CD08F88DCFB4552C /* Pods_GTTexture_RxExtension_Tests.framework */; };
@@ -17,6 +17,10 @@
 		9BB6AC58209D7A3D003DDE2A /* ASImageNode+RxExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC42209D724E003DDE2A /* ASImageNode+RxExtensionSpec.swift */; };
 		9BB6AC59209D7A40003DDE2A /* ASControlNode+RxExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC3E209D7233003DDE2A /* ASControlNode+RxExtensionSpec.swift */; };
 		9BB6AC5A209D7A42003DDE2A /* ASButtonNode+RxExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC3C209D7221003DDE2A /* ASButtonNode+RxExtensionSpec.swift */; };
+		9BB6AC5D209D8C35003DDE2A /* ButtonTestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC5C209D8C35003DDE2A /* ButtonTestNode.swift */; };
+		9BB6AC61209D8C6C003DDE2A /* ImageTestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC60209D8C6C003DDE2A /* ImageTestNode.swift */; };
+		9BB6AC67209D8CB3003DDE2A /* NetworkImageTestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC66209D8CB3003DDE2A /* NetworkImageTestNode.swift */; };
+		9BB6AC6B209D8CD0003DDE2A /* TextTestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC6A209D8CD0003DDE2A /* TextTestNode.swift */; };
 		E0CA4B83AAF228381A42DAFE /* Pods_GTTexture_RxExtension_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45A66E3F8B74606BE20B6EE /* Pods_GTTexture_RxExtension_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +41,7 @@
 		607FACD01AFB9204008FA782 /* GTTexture-RxExtension_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GTTexture-RxExtension_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* GTTexture-RxExtension_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GTTexture-RxExtension_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +60,10 @@
 		9BB6AC4F209D77BF003DDE2A /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB6AC51209D78FD003DDE2A /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB6AC53209D79AF003DDE2A /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB6AC5C209D8C35003DDE2A /* ButtonTestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonTestNode.swift; path = Nodes/ButtonTestNode.swift; sourceTree = "<group>"; };
+		9BB6AC60209D8C6C003DDE2A /* ImageTestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageTestNode.swift; path = Nodes/ImageTestNode.swift; sourceTree = "<group>"; };
+		9BB6AC66209D8CB3003DDE2A /* NetworkImageTestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkImageTestNode.swift; path = Nodes/NetworkImageTestNode.swift; sourceTree = "<group>"; };
+		9BB6AC6A209D8CD0003DDE2A /* TextTestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextTestNode.swift; path = Nodes/TextTestNode.swift; sourceTree = "<group>"; };
 		BB085ECB538D9D1DCD4FD266 /* Pods-GTTexture-RxExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTTexture-RxExtension_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GTTexture-RxExtension_Example/Pods-GTTexture-RxExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BF7ABDB951D657BDD5C700E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D45A66E3F8B74606BE20B6EE /* Pods_GTTexture_RxExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTTexture_RxExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,8 +128,9 @@
 		607FACD21AFB9204008FA782 /* Example for GTTexture-RxExtension */ = {
 			isa = PBXGroup;
 			children = (
+				9BB6AC5B209D8C17003DDE2A /* Nodes */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* TestViewController.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -167,6 +176,17 @@
 				95934C72A791E92FD8C7638B /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9BB6AC5B209D8C17003DDE2A /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				9BB6AC5C209D8C35003DDE2A /* ButtonTestNode.swift */,
+				9BB6AC60209D8C6C003DDE2A /* ImageTestNode.swift */,
+				9BB6AC66209D8CB3003DDE2A /* NetworkImageTestNode.swift */,
+				9BB6AC6A209D8CD0003DDE2A /* TextTestNode.swift */,
+			);
+			name = Nodes;
 			sourceTree = "<group>";
 		};
 		AC00553BB689CE1650A64B9C /* Pods */ = {
@@ -412,8 +432,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				9BB6AC5D209D8C35003DDE2A /* ButtonTestNode.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				9BB6AC6B209D8CD0003DDE2A /* TextTestNode.swift in Sources */,
+				9BB6AC61209D8C6C003DDE2A /* ImageTestNode.swift in Sources */,
+				9BB6AC67209D8CB3003DDE2A /* NetworkImageTestNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

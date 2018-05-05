@@ -1,5 +1,9 @@
 //
 //  ASControlNode+RxExtension.swift
+//
+//  Created by Geektree0101.
+//  Copyright(C) 2018 Geektree0101. All rights reserved.
+//
 
 import AsyncDisplayKit
 import RxSwift
@@ -122,4 +126,11 @@ extension Reactive where Base: ASControlNode {
             node.isHighlighted = isHighlighted
         }
     }
+    
+    public var isSelected: Binder<Bool> {
+        return Binder(self.base) { node, isSelected in
+            node.isSelected = isSelected
+        }
+    }
+    
 }

@@ -180,6 +180,20 @@ class ASControlNode_RxExtensionSpecSpec: QuickSpec {
                 
                 expect(controlNode.isHighlighted).to(beFalse())
             }
+            
+            it("should be selected/non-selected") {
+                Observable.just(true)
+                    .bind(to: controlNode.rx.isSelected)
+                    .disposed(by: disposedBag)
+                
+                expect(controlNode.isSelected).to(beTrue())
+                
+                Observable.just(false)
+                    .bind(to: controlNode.rx.isSelected)
+                    .disposed(by: disposedBag)
+                
+                expect(controlNode.isSelected).to(beFalse())
+            }
         }
     }
 }
