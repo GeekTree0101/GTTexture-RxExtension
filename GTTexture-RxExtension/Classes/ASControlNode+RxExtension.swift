@@ -109,26 +109,26 @@ extension Reactive where Base: ASControlNode {
             .emit(to: relay)
     }
     
-    public var isHidden: Binder<Bool> {
-        return Binder(self.base) { node, isHidden in
+    public var isHidden: ASBinder<Bool> {
+        return ASBinder(self.base) { node, isHidden in
             node.isHidden = isHidden
         }
     }
     
-    public var isEnabled: Binder<Bool> {
-        return Binder(self.base) { node, isEnabled in
+    public var isEnabled: ASBinder<Bool> {
+        return ASBinder(self.base) { node, isEnabled in
             node.isEnabled = isEnabled
         }
     }
     
-    public var isHighlighted: Binder<Bool> {
-        return Binder(self.base) { node, isHighlighted in
+    public var isHighlighted: ASBinder<Bool> {
+        return ASBinder(self.base) { node, isHighlighted in
             node.isHighlighted = isHighlighted
         }
     }
     
-    public var isSelected: Binder<Bool> {
-        return Binder(self.base) { node, isSelected in
+    public var isSelected: ASBinder<Bool> {
+        return ASBinder(self.base) { node, isSelected in
             node.isSelected = isSelected
         }
     }

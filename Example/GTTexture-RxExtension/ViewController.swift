@@ -9,7 +9,6 @@ import UIKit
 import AsyncDisplayKit
 import RxSwift
 import RxCocoa
-import GTTexture_RxExtension
 
 class ViewController: ASViewController<ASDisplayNode> {
     let disposeBag = DisposeBag()
