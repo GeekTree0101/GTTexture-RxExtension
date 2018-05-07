@@ -24,22 +24,22 @@ import PINRemoteImage
 extension Reactive where Base: ASButtonNode {
     
     // apply attributedText on all control state
-    public var attributedText: Binder<NSAttributedString?> {
-        return Binder(self.base) { node, attributedText in
+    public var attributedText: ASBinder<NSAttributedString?> {
+        return ASBinder(self.base) { node, attributedText in
             self.setAllAttributedTitle(node, attributedText)
         }
     }
     
     // apply attributedText on targeted control state
-    public func attributedText(_ controlState: UIControlState) -> Binder<NSAttributedString?> {
-        return Binder(self.base) { node, attributedText in
+    public func attributedText(_ controlState: UIControlState) -> ASBinder<NSAttributedString?> {
+        return ASBinder(self.base) { node, attributedText in
             node.setAttributedTitle(attributedText, for: controlState)
         }
     }
     
     // apply text with attribute on all control state
-    public func text(_ attribute: [NSAttributedStringKey: Any]?) -> Binder<String?> {
-        return Binder(self.base) { node, text in
+    public func text(_ attribute: [NSAttributedStringKey: Any]?) -> ASBinder<String?> {
+        return ASBinder(self.base) { node, text in
             guard let text = text else {
                 self.setAllAttributedTitle(node, nil)
                 return
@@ -52,8 +52,8 @@ extension Reactive where Base: ASButtonNode {
     
     // apply text with attribute on targeted control state
     public func text(_ attribute: [NSAttributedStringKey: Any]?,
-              target: UIControlState) -> Binder<String?> {
-        return Binder(self.base) { node, text in
+              target: UIControlState) -> ASBinder<String?> {
+        return ASBinder(self.base) { node, text in
             guard let text = text else {
                 node.setAttributedTitle(nil, for: target)
                 return
@@ -65,8 +65,8 @@ extension Reactive where Base: ASButtonNode {
     }
     
     // apply text with attributes
-    public func text(applyList: [GTControlStateType]) -> Binder<String?> {
-        return Binder(self.base) { node, text in
+    public func text(applyList: [GTControlStateType]) -> ASBinder<String?> {
+        return ASBinder(self.base) { node, text in
             guard let text = text else {
                 for apply in applyList {
                     node.setAttributedTitle(nil,
@@ -84,20 +84,20 @@ extension Reactive where Base: ASButtonNode {
         }
     }
     
-    public var image: Binder<UIImage?> {
-        return Binder(self.base) { node, image in
+    public var image: ASBinder<UIImage?> {
+        return ASBinder(self.base) { node, image in
             self.setAllImage(node, image: image)
         }
     }
     
-    public var backgroundImage: Binder<UIImage?> {
-        return Binder(self.base) { node, image in
+    public var backgroundImage: ASBinder<UIImage?> {
+        return ASBinder(self.base) { node, image in
             self.setAllBackgroundImage(node, image: image)
         }
     }
     
-    public func image(applyList: [GTControlStateType]) -> Binder<UIImage?> {
-        return Binder(self.base) { node, image in
+    public func image(applyList: [GTControlStateType]) -> ASBinder<UIImage?> {
+        return ASBinder(self.base) { node, image in
             guard let image = image  else {
                 for apply in applyList {
                     node.setImage(nil, for: apply.state)
@@ -112,8 +112,8 @@ extension Reactive where Base: ASButtonNode {
         }
     }
     
-    public func backgroundImage(applyList: [GTControlStateType]) -> Binder<UIImage?> {
-        return Binder(self.base) { node, image in
+    public func backgroundImage(applyList: [GTControlStateType]) -> ASBinder<UIImage?> {
+        return ASBinder(self.base) { node, image in
             guard let image = image  else {
                 for apply in applyList {
                     node.setBackgroundImage(nil, for: apply.state)
@@ -128,8 +128,8 @@ extension Reactive where Base: ASButtonNode {
         }
     }
     
-    public var imageURL: Binder<URL?> {
-        return Binder(self.base) { node, url in
+    public var imageURL: ASBinder<URL?> {
+        return ASBinder(self.base) { node, url in
             guard let url = url else {
                 self.setAllImage(node, image: nil)
                 return
@@ -141,8 +141,8 @@ extension Reactive where Base: ASButtonNode {
         }
     }
     
-    public var backgroundImageURL: Binder<URL?> {
-        return Binder(self.base) { node, url in
+    public var backgroundImageURL: ASBinder<URL?> {
+        return ASBinder(self.base) { node, url in
             guard let url = url else {
                 self.setAllBackgroundImage(node, image: nil)
                 return
@@ -154,8 +154,8 @@ extension Reactive where Base: ASButtonNode {
         }
     }
     
-    public func image(applyList: [GTControlStateType]) -> Binder<URL?> {
-        return Binder(self.base) { node, url in
+    public func image(applyList: [GTControlStateType]) -> ASBinder<URL?> {
+        return ASBinder(self.base) { node, url in
             guard let url = url else {
                 for apply in applyList {
                     node.setImage(nil, for: apply.state)
@@ -172,8 +172,8 @@ extension Reactive where Base: ASButtonNode {
         }
     }
     
-    public func backgroundImage(applyList: [GTControlStateType]) -> Binder<URL?> {
-        return Binder(self.base) { node, url in
+    public func backgroundImage(applyList: [GTControlStateType]) -> ASBinder<URL?> {
+        return ASBinder(self.base) { node, url in
             guard let url = url  else {
                 for apply in applyList {
                     node.setBackgroundImage(nil, for: apply.state)

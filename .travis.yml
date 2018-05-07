@@ -12,5 +12,6 @@ branches:
     - master
     
 script:
-    - xcodebuild clean -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension | xcpretty
-    - xcodebuild build -sdk iphonesimulator -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension CODE_SIGNING_REQUIRED=NO | xcpretty
+- xcodebuild clean -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension | xcpretty
+- xcodebuild build -sdk iphonesimulator -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension CODE_SIGNING_REQUIRED=NO | xcpretty
+

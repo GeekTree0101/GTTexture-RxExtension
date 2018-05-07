@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'Texture RxSwift Extension'
 
-  s.description      = 'Texture RxSwift Extension'
+  s.description      = 'Texture RxSwift Interactive Wrapper base on ASControlNode'
 
   s.homepage         = 'https://github.com/Geektree0101/GTTexture-RxExtension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

@@ -11,8 +11,8 @@ import RxCocoa
 
 extension Reactive where Base: ASImageNode {
 
-    public var image: Binder<UIImage?> {
-        return Binder(self.base) { node, image in
+    public var image: ASBinder<UIImage?> {
+        return ASBinder(self.base) { node, image in
             node.image = image
         }
     }
