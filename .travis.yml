@@ -12,9 +12,6 @@ branches:
     - master
     
 script:
-- pod lib lint
-- pod install --repo-update
-- pod outdated --no-repo-update || echo "Pod outated skipped"
 - xcodebuild clean -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension | xcpretty
 - xcodebuild build -sdk iphonesimulator -workspace Example/GTTexture-RxExtension.xcworkspace -scheme GTTexture-RxExtension CODE_SIGNING_REQUIRED=NO | xcpretty
 

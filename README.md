@@ -118,7 +118,7 @@ viewModel.desc
   </tr>
 </table>
 
-- [ASBinder](https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/Example/GTTexture-RxExtension/Nodes/ASBinderTestNode.swift)s
+- [ASBinder](https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/Example/GTTexture-RxExtension/Nodes/ASBinderTestNode.swift)
 
 ## Installation
 
