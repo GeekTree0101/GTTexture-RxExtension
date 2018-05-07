@@ -11,14 +11,14 @@ import RxCocoa
 
 extension Reactive where Base: ASTextNode {
     
-    public var attributedText: Binder<NSAttributedString?> {
-        return Binder(self.base) { node, attributedText in
+    public var attributedText: ASBinder<NSAttributedString?> {
+        return ASBinder(self.base) { node, attributedText in
             node.attributedText = attributedText
         }
     }
 
-    public func text(_ attributes: [NSAttributedStringKey: Any]?) -> Binder<String?> {
-        return Binder(self.base) { node, text in
+    public func text(_ attributes: [NSAttributedStringKey: Any]?) -> ASBinder<String?> {
+        return ASBinder(self.base) { node, text in
             guard let text = text else {
                 node.attributedText = nil
                 return

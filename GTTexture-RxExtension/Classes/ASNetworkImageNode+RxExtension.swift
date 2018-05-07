@@ -11,14 +11,14 @@ import RxCocoa
 
 extension Reactive where Base: ASNetworkImageNode {
     
-    public var url: Binder<URL?> {
-        return Binder(self.base) { node, url in
+    public var url: ASBinder<URL?> {
+        return ASBinder(self.base) { node, url in
             node.setURL(url, resetToDefault: true)
         }
     }
     
-    public func url(resetToDefault: Bool) -> Binder<URL?> {
-        return Binder(self.base) { node, url in
+    public func url(resetToDefault: Bool) -> ASBinder<URL?> {
+        return ASBinder(self.base) { node, url in
             node.setURL(url, resetToDefault: resetToDefault)
         }
     }
