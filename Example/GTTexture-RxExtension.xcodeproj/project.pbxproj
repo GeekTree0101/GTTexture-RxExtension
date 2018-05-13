@@ -12,6 +12,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		95B109AB7AC68C78787AC9D9 /* Pods_GTTexture_RxExtension_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01237F39CD08F88DCFB4552C /* Pods_GTTexture_RxExtension_Tests.framework */; };
+		9B0E3BE520A81BEB007346CF /* EditableTextTestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E3BE420A81BEB007346CF /* EditableTextTestNode.swift */; };
+		9B0E3BE820A81C67007346CF /* ASEditableTextNode+RxExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E3BE620A81C2A007346CF /* ASEditableTextNode+RxExtensionSpec.swift */; };
 		9B8A890F20A02194000CEF86 /* ASBinderTestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A890E20A02194000CEF86 /* ASBinderTestNode.swift */; };
 		9BB6AC56209D7A38003DDE2A /* ASNetworkImageNode+RxExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC44209D725B003DDE2A /* ASNetworkImageNode+RxExtensionSpec.swift */; };
 		9BB6AC57209D7A3B003DDE2A /* ASTextNode+RxExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6AC46209D726B003DDE2A /* ASTextNode+RxExtensionSpec.swift */; };
@@ -50,6 +52,8 @@
 		6C4199A7267EB6A72A028AC3 /* Pods-GTTexture-RxExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTTexture-RxExtension_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GTTexture-RxExtension_Tests/Pods-GTTexture-RxExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		860A25685F324157C6CBA70F /* Pods-GTTexture-RxExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTTexture-RxExtension_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GTTexture-RxExtension_Tests/Pods-GTTexture-RxExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		95934C72A791E92FD8C7638B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9B0E3BE420A81BEB007346CF /* EditableTextTestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditableTextTestNode.swift; path = Nodes/EditableTextTestNode.swift; sourceTree = "<group>"; };
+		9B0E3BE620A81C2A007346CF /* ASEditableTextNode+RxExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASEditableTextNode+RxExtensionSpec.swift"; sourceTree = "<group>"; };
 		9B8A890E20A02194000CEF86 /* ASBinderTestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASBinderTestNode.swift; sourceTree = "<group>"; };
 		9BB6AC3C209D7221003DDE2A /* ASButtonNode+RxExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASButtonNode+RxExtensionSpec.swift"; sourceTree = "<group>"; };
 		9BB6AC3E209D7233003DDE2A /* ASControlNode+RxExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASControlNode+RxExtensionSpec.swift"; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				9BB6AC42209D724E003DDE2A /* ASImageNode+RxExtensionSpec.swift */,
 				9BB6AC44209D725B003DDE2A /* ASNetworkImageNode+RxExtensionSpec.swift */,
 				9BB6AC46209D726B003DDE2A /* ASTextNode+RxExtensionSpec.swift */,
+				9B0E3BE620A81C2A007346CF /* ASEditableTextNode+RxExtensionSpec.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				9BB6AC66209D8CB3003DDE2A /* NetworkImageTestNode.swift */,
 				9BB6AC6A209D8CD0003DDE2A /* TextTestNode.swift */,
 				9B8A890E20A02194000CEF86 /* ASBinderTestNode.swift */,
+				9B0E3BE420A81BEB007346CF /* EditableTextTestNode.swift */,
 			);
 			name = Nodes;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				9BB6AC5D209D8C35003DDE2A /* ButtonTestNode.swift in Sources */,
+				9B0E3BE520A81BEB007346CF /* EditableTextTestNode.swift in Sources */,
 				9B8A890F20A02194000CEF86 /* ASBinderTestNode.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				9BB6AC6B209D8CD0003DDE2A /* TextTestNode.swift in Sources */,
@@ -454,6 +461,7 @@
 				9BB6AC58209D7A3D003DDE2A /* ASImageNode+RxExtensionSpec.swift in Sources */,
 				9BB6AC57209D7A3B003DDE2A /* ASTextNode+RxExtensionSpec.swift in Sources */,
 				9BB6AC59209D7A40003DDE2A /* ASControlNode+RxExtensionSpec.swift in Sources */,
+				9B0E3BE820A81C67007346CF /* ASEditableTextNode+RxExtensionSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
