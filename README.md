@@ -28,6 +28,8 @@ more see:
 
 - [ASTextNode RxExtension Example](https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/Example/GTTexture-RxExtension/Nodes/TextTestNode.swift)
 
+- [ASEditableTextNode RxExtension Example](https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/Example/GTTexture-RxExtension/Nodes/EditableTextTestNode.swift)
+
 - [ASScrollNode](https://github.com/ReactiveX/RxSwift/blob/master/RxCocoa/iOS/UIScrollView%2BRx.swift)
 
 #### ASBinder
@@ -118,15 +120,23 @@ viewModel.desc
   </tr>
 </table>
 
-- [ASBinder](https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/Example/GTTexture-RxExtension/Nodes/ASBinderTestNode.swift)
+- [ASBinder](https://github.com/GeekTree0101/GTTexture-RxExtension/blob/master/Example/GTTexture-RxExtension/ASBinderTestNode.swift)
 
 ## Installation
 
 GTTexture-RxExtension is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+#### swift 4.x
+
 ```ruby
 pod 'GTTexture-RxExtension'
+```
+
+#### swift 3.x
+
+```ruby
+pod 'GTTexture-RxExtension', '1.2.0-swift3.x'
 ```
 
 ## Author
