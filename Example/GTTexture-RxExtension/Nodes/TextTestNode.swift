@@ -19,7 +19,7 @@ class TextTestNode: ASDisplayNode {
     
     lazy var textNode = ASTextNode()
     let disposeBag = DisposeBag()
-    static let attribute = [NSAttributedStringKey.foregroundColor: UIColor.gray]
+    static let attribute = [NSForegroundColorAttributeName: UIColor.gray]
     
     override init() {
         super.init()

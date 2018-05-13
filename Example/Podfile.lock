@@ -1,5 +1,5 @@
 PODS:
-  - GTTexture-RxExtension (1.1.0):
+  - GTTexture-RxExtension (1.2.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
     - Texture (~> 2.6)
@@ -44,7 +44,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  GTTexture-RxExtension: bed0f570903eff679808b491698aa4ea1b8f0de1
+  GTTexture-RxExtension: f6bb3dca4d35b5391827815019b21704b942486a
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac

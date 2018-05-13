@@ -17,7 +17,7 @@ extension Reactive where Base: ASEditableTextNode {
         }
     }
     
-    public func text(_ attributes: [NSAttributedStringKey: Any]?) -> ASBinder<String?> {
+    public func text(_ attributes: [String: Any]?) -> ASBinder<String?> {
         return ASBinder(self.base) { node, text in
             guard let text = text else {
                 node.attributedText = nil

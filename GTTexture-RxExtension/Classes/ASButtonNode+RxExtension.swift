@@ -38,7 +38,7 @@ extension Reactive where Base: ASButtonNode {
     }
     
     // apply text with attribute on all control state
-    public func text(_ attribute: [NSAttributedStringKey: Any]?) -> ASBinder<String?> {
+    public func text(_ attribute: [String: Any]?) -> ASBinder<String?> {
         return ASBinder(self.base) { node, text in
             guard let text = text else {
                 self.setAllAttributedTitle(node, nil)
@@ -51,7 +51,7 @@ extension Reactive where Base: ASButtonNode {
     }
     
     // apply text with attribute on targeted control state
-    public func text(_ attribute: [NSAttributedStringKey: Any]?,
+    public func text(_ attribute: [String: Any]?,
               target: UIControlState) -> ASBinder<String?> {
         return ASBinder(self.base) { node, text in
             guard let text = text else {
@@ -266,16 +266,16 @@ extension Reactive where Base: ASButtonNode {
             }
         }
         
-        var attributes: [NSAttributedStringKey: Any]? {
+        var attributes: [String: Any]? {
             switch self {
             case .normal(let attr):
-                return attr as? [NSAttributedStringKey: Any]
+                return attr as? [String: Any]
             case .highlighted(let attr):
-                return attr as? [NSAttributedStringKey: Any]
+                return attr as? [String: Any]
             case .disabled(let attr):
-                return attr as? [NSAttributedStringKey: Any]
+                return attr as? [String: Any]
             case .selected(let attr):
-                return attr as? [NSAttributedStringKey: Any]
+                return attr as? [String: Any]
             }
         }
     }
