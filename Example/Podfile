@@ -11,3 +11,16 @@ target 'GTTexture-RxExtension_Example' do
     pod 'RxTest', '~> 4.0'
   end
 end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            if config.name.include?("Debug")
+                #NOTE: Thread-local storage is not supported for the current target ref: https://github.com/TextureGroup/Texture/issues/873
+                config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES'
+                else
+                config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+            end
+        end
+    end
+end

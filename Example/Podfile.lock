@@ -1,8 +1,8 @@
 PODS:
-  - GTTexture-RxExtension (1.2.0):
+  - GTTexture-RxExtension (1.3.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-    - Texture (~> 2.6)
+    - Texture (~> 2.7)
   - Nimble (7.0.3)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -56,7 +56,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GTTexture-RxExtension: f9922bb5b6ef2a6b16699d78dad85849f93caea6
+  GTTexture-RxExtension: fe8a9c0f8ce0c3450776a99e0747b2f9f9f2ff44
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
@@ -67,6 +67,6 @@ SPEC CHECKSUMS:
   RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
   Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
 
-PODFILE CHECKSUM: 68115f24e3cc3827d8759c972f6629a1789cec41
+PODFILE CHECKSUM: 2ac0e10c15c1446f9eedbcaf463e4aebad891395
 
 COCOAPODS: 1.5.3

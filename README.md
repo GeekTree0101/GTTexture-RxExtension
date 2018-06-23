@@ -133,11 +133,17 @@ it, simply add the following line to your Podfile:
 pod 'GTTexture-RxExtension'
 ```
 
-#### swift 3.x
+#### [DEPRECATED] swift 3.x
 
 ```ruby
 pod 'GTTexture-RxExtension', '1.2.0-swift3.x'
 ```
+
+## Caution
+This library has been migrated to Texture 2.7.
+When Rx subscribe logic moves from initialization to didLoad method. I no longer faced this problem.
+When using RxSwift / RxCocoa, it is safe to subscribe from the didLoad method.
+https://github.com/TextureGroup/Texture/issues/977
 
 ## Author
 
