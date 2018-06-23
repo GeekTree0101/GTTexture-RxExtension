@@ -199,11 +199,11 @@ extension Reactive where Base: ASButtonNode {
                                url: URL,
                                target: ImageDownloadTarget,
                                state: UIControlState?) {
-        ASPINRemoteImageDownloader.shared()
+        ASPINRemoteImageDownloader.shared
             .downloadImage(with: url,
                            callbackQueue: DispatchQueue.global(qos: .background),
                            downloadProgress: nil,
-                           completion: { image, err, id in
+                           completion: { image, err, id, userInfo in
                             switch target {
                             case .image:
                                 if let state = state {
