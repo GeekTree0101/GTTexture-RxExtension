@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GTTexture-RxExtension'
-  s.version          = '1.2.0'
+  s.version          = '1.3.0'
   s.summary          = 'Texture RxSwift Extension'
 
   s.description      = 'Texture RxSwift Interactive Wrapper base on ASControlNode'
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.source_files = 'GTTexture-RxExtension/Classes/**/*'
   s.dependency 'RxSwift', '~> 4.0'
   s.dependency 'RxCocoa', '~> 4.0'
-  s.dependency 'Texture', '~> 2.6'
+  s.dependency 'Texture', '~> 2.7'
 end
