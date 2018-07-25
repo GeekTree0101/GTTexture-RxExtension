@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
 [![Platform](https://img.shields.io/cocoapods/p/GTTexture-RxExtension.svg?style=flat)](https://cocoapods.org/pods/GTTexture-RxExtension)
 
+## Notice
+GTTexture+RxExtension will replace name as RxCocoa+Texture
+
 ## Concept
 Texture provides various basic components such as ASTableNode, ASControlNode, ASButtonNode and so on.
 
