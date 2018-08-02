@@ -7,6 +7,7 @@
 
 ## Notice
 ### GTTexture+RxExtension will replace name as RxCocoa+Texture
+### HERE -> https://github.com/GeekTree0101/RxCocoa-Texture
 
 ## Concept
 Texture provides various basic components such as ASTableNode, ASControlNode, ASButtonNode and so on.
